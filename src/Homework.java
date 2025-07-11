@@ -115,9 +115,9 @@ public class Homework {
             throw new IllegalArgumentException("Массив не должен быть пустым или null");
         }
         int min = arr[0];
-        for (int i : arr) {
-            if (min > i) {
-                min = i;
+        for (int i = 1; i < arr.length; i++) {
+            if (min > arr[i]) {
+                min = arr[i];
             }
         }
         return min;
